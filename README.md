@@ -27,3 +27,7 @@ Now just be patient and wait for the installation to complete.
 Once the installation is completed, you will be asked whether you would like to start the control panel now or not, displaying the message “Do you want to start the control panel now?” Check the box and click on the ‘Finish’ button and see if the XAMPP is working fine.
 ## Step 3: XAMPP is now Installed, run it
 If the entire process of XAMPP installation went correctly, then the control panel would open smoothly. Now click on the ‘Start’ button corresponding to Apache and MySQL.
+
+
+## Author
+* **Rahul Kulkarni** - *Complete Project* - [Rahul Kulkarni](https://github.com/rahulkulkarni40)
