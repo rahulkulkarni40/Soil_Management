@@ -1,0 +1,14 @@
+<?php
+$con=mysqli_connect('localhost','root','','project');
+if(mysqli_connect_error())
+{
+	echo"could not connect:".mysqli_connect_error();
+}
+	$sql="update shop set contact='$_POST[con]',email='$_POST[email]' where shopid='".$_POST['shopid']."'";
+	$result=mysqli_query($con,$sql);
+	echo'<script type="text/javascript">';
+	echo'alert("Account has been successfully Updated")';
+	echo'</script>';
+	echo'<script>window.location="no-sidebar.html"</script>';
+mysqli_close($con);
+?> 

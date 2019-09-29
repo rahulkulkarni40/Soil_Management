@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Shop keeper generation </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+
+function validate()
+{
+               if (!myForm.fn.value.match(/^[a-zA-Z]+$/))
+               {
+                    myForm.fn.value="";
+                    myForm.fn.focus(); 
+                    alert("Enter only alphabets in Firstname");
+					return false;
+               }
+			   
+			   
+			   if (!myForm.con.value.match(/^[0-9]+$/))
+               {
+                    myForm.con.value="";
+                    myForm.con.focus(); 
+                    alert("Enter only Numbers phone number");
+					return false;
+               }
+			   if (!myForm.ln.value.match(/^[a-zA-Z]+$/))
+               {
+                    myForm.ln.value="";
+                    myForm.ln.focus(); 
+                    alert("Enter only alphabets in LastName");
+					return false;
+               }
+			   
+}      
+
+
+</script>
+</head>
+<body class="blurBg-false" background="images/i1.jpg" width=3000 height=5000>
+<!-- Start Formoid form-->
+<link rel="stylesheet" href="shopreg_files/formoid1/formoid-flat-green.css" type="text/css" />
+<script type="text/javascript" src="shopreg_files/formoid1/jquery.min.js"></script>
+<center>
+<font color="#000000">
+<form  action ="shopreg.php" name="myForm" class="formoid-flat-green" style="font-size:16px;font-family:'Lato', sans-serif;max-width:480px;min-width:150px" method="post" onsubmit="return(validate());"><div class="title"><h2>Shop keeper generation</h2></div>
+	<div class="element-input"><label class="title">First name</label><input class="large" type="text" name="fn" /></div>
+	<div class="element-input"><label class="title">Last name</label><input class="large" type="text" name="ln" /></div>
+	<div class="element-textarea"><label class="title">Address</label><textarea class="medium" name="add" cols="20" rows="5" ></textarea></div>
+	<div class="element-number" ><label class="title">Conatct</label><input class="large" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="10" type="text" min="0" name="con"  value="" required/></div>
+	<div class="element-email"><label class="title">Email</label><input class="large" type="email" name="email" value="" /></div>
+	<div class="element-input"><label class="title">Password</label><input class="large" type="password" name="pwd" /></div>
+	<div class="element-input"><label class="title">conform password</label><input class="large" type="password" name="pwd1" /></div>
+	<div class="element-input"><label class="title">shope keeper id</label><input class="large" type="text" name="shopid" /></div>
+<div class="submit"><input type="submit" value="Submit"/>
+<class="reset"><input type="reset" value="reset"/> 
+
+</div></form><p class="frmd"><a href="http://formoid.com/v29.php">form css</a> Formoid.com 2.9</p><script type="text/javascript" src="shopreg_files/formoid1/formoid-flat-green.js"></script>
+<!-- Stop Formoid form-->
+
+</font>
+</center>
+</body>
+</html>
